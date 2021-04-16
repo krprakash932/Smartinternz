@@ -1,5 +1,0 @@
-email id
-username
-qualification
-skills
-select job
