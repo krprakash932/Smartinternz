@@ -59,6 +59,8 @@ public class AppController {
 	@PostMapping("/process_apply")
 	public String processApply(jobs jobs) {
 		jobRepo.save(jobs);
+		System.out.println(jobs.getId());
+		System.out.println(jobs.getName());
 		return "display";
 	}
 	@GetMapping("/display")
