@@ -57,10 +57,10 @@ public class AppController {
 	}
 		
 	@PostMapping("/process_apply")
-	public String processApply(jobs jobs) {
-		jobRepo.save(jobs);
-		System.out.println(jobs.getId());
-		System.out.println(jobs.getName());
+	public String processApply(jobs job) {
+		jobRepo.save(job);
+		System.out.println(job.getId());
+		System.out.println(job.getName());
 		return "display";
 	}
 	@GetMapping("/display")
